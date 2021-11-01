@@ -8,7 +8,7 @@ const shortid = require('shortid');
 const validurl = require('valid-url');
 const {Schema} = mongoose;
 
-mongoose.connect('mongodb+srv://narendra14:vg9mINejqXHG5RFM@cluster0.gyizq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
+mongoose.connect(process.env.URI,{
   useNewUrlParser:true,
   useUnifiedTopology:true,
   serverSelectionTimeoutMS:5000
